@@ -14,4 +14,70 @@
 
 // click.applyBindings
 
-const updateCli
+// const updateCli
+
+
+
+// let coins = 0;
+// let coinsPS = 0;
+// let coinsPC = 1;
+
+
+// function gainCoin() {
+
+// coins += coinsPC;
+
+// }
+
+// setInterval(function renderCoins() {
+
+// document.getElementById("coins").innerHTML = "Coins: " + coins;
+
+// })
+
+
+// setInterval(function renderCoinsPS() {
+
+// document.getElementById("coinsPS").innerHTML = "Coins per second: " + 
+// coinsPS;
+
+// })
+// const addInterval;
+// function getCoinsPS(){
+
+// if (coins >= 50){
+// coinsPS += 1;
+// coins -= 50;
+
+// }
+// else{
+// alert("Sorry, you don't have enough coins.")
+// }
+// if (addInterval) window.clearTimeout(addInterval)
+// addInterval = setInterval(function coinPS() {coins += coinsPS;
+
+// }, 1000)
+
+// }
+
+let gen1amount = 0, gen1price = 10, gen1baseprice = 10, credit = 0, cps = 0;
+    function update(){
+        click.onclick = function() {credit = credit + 1};
+        generator1.onclick = function() {
+        if (credit >= gen1price) {
+            credit = credit - gen1price;
+            gen1amount = gen1amount + 1;
+            cps = cps + 1;
+            gen1price = gen1baseprice * (Math.pow(1.2, gen1amount));
+            };
+        };
+        credit = credit + (cps/60);
+    };
+    function draw(){
+        creditPerSecond.value = cps.toFixed(0);
+        creds.value = credit.toFixed(0);
+        generator1.value = gen1price.toFixed(0);
+        generator1amount.value = gen1amount.toFixed(0);
+    };
+    let mainloop = function() {update(), draw()}; 
+    setInterval(mainloop, 16);

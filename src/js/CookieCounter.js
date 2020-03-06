@@ -43,11 +43,11 @@
 // };
 
 // ko.applyBindings(new ClickCounterViewModel());
-
-const gameClicker ={
-  click: 0,
-  clickPC: 1
-}
-function countClick(){
-  gameClicker.click += gameClicker.clickPC
-}
+// most recent
+// const gameClicker ={
+//   click: 0,
+//   clickPC: 1
+// }
+// function countClick(){
+//   gameClicker.click += gameClicker.clickPC
+// }
