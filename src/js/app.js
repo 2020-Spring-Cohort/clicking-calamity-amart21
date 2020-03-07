@@ -60,7 +60,12 @@
 
 // }
 
-let gen1amount = 0, gen1price = 10, gen1baseprice = 10, credit = 0, cps = 0;
+let gen1amount = 0, 
+    gen1price = 10,
+    gen1baseprice = 10, 
+    credit = 0, 
+    cps = 0;
+    
     function update(){
         click.onclick = function() {credit = credit + 1};
         generator1.onclick = function() {
