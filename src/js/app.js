@@ -65,7 +65,7 @@ let gen1amount = 0,
     gen1baseprice = 10, 
     credit = 0, 
     cps = 0;
-    
+
     function update(){
         click.onclick = function() {credit = credit + 1};
         generator1.onclick = function() {
@@ -74,15 +74,30 @@ let gen1amount = 0,
             gen1amount = gen1amount + 1;
             cps = cps + 1;
             gen1price = gen1baseprice * (Math.pow(1.2, gen1amount));
-            };
-        };
+            }
+            else{
+                alert("You need more clicks")
+            }
+            };                        
+        
         credit = credit + (cps/60);
     };
-    function draw(){
+    // function check(){
+    //     click.onclick = function() {
+    //         credit = credit +1};
+    //         generator1.onclick = function(){
+    //             if(credit <= gen1price){
+    //             document.getElementById("alert").innerHTML = "You need to click more";  
+    //             }
+    //         }
+    //     }
+        function draw(){
         creditPerSecond.value = cps.toFixed(0);
         creds.value = credit.toFixed(0);
         generator1.value = gen1price.toFixed(0);
         generator1amount.value = gen1amount.toFixed(0);
     };
-    let mainloop = function() {update(), draw()}; 
+    let mainloop = function() {
+        update(), draw()}; 
     setInterval(mainloop, 16);
+    
