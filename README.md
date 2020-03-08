@@ -13,23 +13,23 @@ You have been contracted by Coo Coo Computing Challengers to take a concept, Cli
       - [ ] Provides a button to purchase _Clicking Companions_.
       - [ ] Button is disabled when you do not have enough clicks to buy a _Clicking Companion_.
     - [ ] Create a section on the page that interacts with the _'Collective Culmination Compounder'_.
-      - [ ] Displays the amount of _Collective Culmination Compounder_ purchased.
-      - [ ] Provides a button to purchase _Collective Culmination Compounder_.
-      - [ ] Button is disabled when you do not have enough clicks to buy a _Collective Culmination Compounder_.
-- [ ] Have a function that returns the click count.
+      - [X ] Displays the amount of _Collective Culmination Compounder_ purchased.
+      - [X ] Provides a button to purchase _Collective Culmination Compounder_.
+      - [ X] Button is disabled when you do not have enough clicks to buy a _Collective Culmination Compounder_.
+- [ X] Have a function that returns the click count.
 - [ ] You must implement a feature called _'Clicking Companions'_.
     - [ ] _Clicking Companions_ are bought with clicks from your click total.
-    - [ ] Each _Clicking Companion_ that is purchased increases the cost of the next _Clicking Companion_.
-    - [ ] The initial cost should be around 100 clicks.
-    - [ ] For each _Clicking Companion_ that has been purchased the count of clicks goes up by one every second.  This is a cumulative effect, so having 100 _Clicking Companions_ would result in having 100 clicks automatically added to the total every second.
-      - [ ] Have a function that adds the amount of _Clicking Companions_ to the click total.
-      - [ ] Inside your game loop, call the above function every second.
+    - [ X] Each _Clicking Companion_ that is purchased increases the cost of the next _Clicking Companion_.
+    - [ X] The initial cost should be around 100 clicks.
+    - [ X] For each _Clicking Companion_ that has been purchased the count of clicks goes up by one every second.  This is a cumulative effect, so having 100 _Clicking Companions_ would result in having 100 clicks automatically added to the total every second.
+      - [X ] Have a function that adds the amount of _Clicking Companions_ to the click total.
+      - [ X] Inside your game loop, call the above function every second.
 - [ ] You must implement a feature called _'Collective Culmination Compounders'_.
   - [ ] _Collective Culmination Compounders_ are bought with clicks from your click total.
   - [ ] Each _Collective Culmination Compounder_ that is purchased increases the cost of the next _Collective Culmination Compounder_.
-  - [ ] The initial cost should be around 10 clicks.
-  - [ ] The first _Collective Culmination Compounder_ increases the value of a click from `1x` to `1.2x`.
-  - [ ] Every subsequent _Collective Culmination Compounder_ increases the value of a click exponentially.  For example, the second _Collective Culmination Compounder_ will increase the value of a click to `1.2x * 1.2x` or `1.44x`.
+  - [X ] The initial cost should be around 10 clicks.
+  - [X ] The first _Collective Culmination Compounder_ increases the value of a click from `1x` to `1.2x`.
+  - [ X] Every subsequent _Collective Culmination Compounder_ increases the value of a click exponentially.  For example, the second _Collective Culmination Compounder_ will increase the value of a click to `1.2x * 1.2x` or `1.44x`.
 - [ ] You must be able to reset the game state.  This action should reset the game to zero clicks, zero _Clicking Companions_, and zero _Collective Culmination Compounders_.
 - [ ] This website also has some other requirements:
   - [ ] Use semantic html and BEM when writing your html so that in the future we have a solid base to expand upon.
