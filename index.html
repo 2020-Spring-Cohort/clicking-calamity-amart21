@@ -1,39 +1,52 @@
 <!DOCTYPE Html>
 <head>
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/layout.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clicking Away the Hours</title>
+    <title>Coo Coo Computing Challengers</title>
 </head>
 <body>
-    <p><strong>Click Crazy</strong>&nbsp;&nbsp;&nbsp;<strong>Clicks</strong></p>
-    <p><input id="click" type="button" style="width:100px" value="+ 1 Credit" />&nbsp;&nbsp; <input id="creds" size="34" type="text" value="0" /></p>
-    <p><strong>Multiplier</strong></p>
-    <p><input id="generator1amount" size="2" type="text" value="0" />&nbsp;<input id="generator1" type="button" style="width:110px" />&nbsp;&nbsp;Credits per second + 1</p>
-    <p><strong>Clicks per second:</strong>&nbsp;&nbsp;<input id="creditPerSecond" size="28" type="text" value="0" /></p>   
-    <p><input id="reset" type="button" value="reset"/></p>
-    <p><input id="buyclicks" type="button" value="buyclicks"/> Buying Extra Clicks costs 150</p>
-    <!-- <a href=# onClick = "add"><img src="/images/mouse.jpg"</a>
-
-    <h1 class="header-title">Click for Coins</h1>
-    <h3 id="coins"></h3>
-    <h3 id="coinsPS"></h3>
-
-    <button onclick ="gainCoin()">Coin me</button>
-    <button onclick ="getCoinsPS()">1 Coin Per Second</button> -->
-<!--    
-        You now have a total of:
-        <input type="text" id="text"  disabled style= text-align:center>
-        <script>
-            function add()
-        </script>
-    <div class="container">
-        <div class="anchor"></div>
+    <header>
+        <h1>Navigation Menu</h1>
+    </header> 
+    <div class="hamIcon" onclick="toggleClass()">
+        <hi>&#9776;</hi>
     </div>
-    <script src="src/js/app.js"></script>
-    <script src="src/js/ClickCounter.js"></script>
-    Clicks
-    <br><br>
-    <button><a href="#" onClick="load()">Buy</a></button> -->
+    <nav>
+        <ul class="mainMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Inspiration</a></li>
+            <li><a href="#">Contact Info</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <p>
+            <div class="titleheader"><strong>Welcome to C.C. Computing Challengers</strong></div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="clicksTitle"><strong>Clicks</strong></div>
+        </p>
+        <p>
+            <input id="click" type="button" style="width:100px" value="+ 1 Credit" />&nbsp;&nbsp; 
+            <input id="creds" size="34" type="text" value="0" />
+        </p>
+        <p><strong>Multiplier</strong></p>
+        <p>
+            <input id="generator1amount" size="2" type="text" value="0" />&nbsp;
+            <input id="generator1" type="button" style="width:110px" />&nbsp;&nbsp;Credits per second + 1
+        </p>
+        <p><strong>Clicks per second:</strong>&nbsp;&nbsp;
+            <input id="creditPerSecond" size="28" type="text" value="0" />
+        </p>   
+        <p>
+            <input id="resetClick" type="button" value="reset"/>
+        </p>
+        <p>
+            <input id="buyClicks" type="button" value="buyClicks"/> Buy 50 clicks for 150
+        </p>
+    </div>
+   
 
     <!-- include source files here... -->
    <script src="../src/js/ClickCounter.js"></script>

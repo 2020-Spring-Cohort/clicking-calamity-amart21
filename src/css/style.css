@@ -1,0 +1,17 @@
+@media(max-width: 768px){
+    .mainMenu{
+        display: none;
+    }
+    .mainMenu.hamIcon{
+        display:block;
+    }
+}
+@media(min-width: 769px){
+   .hamIcon{
+        display: none;
+       
+    }
+    .mainMenu{
+        display: initial;
+    }   
+}
