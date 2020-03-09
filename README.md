@@ -25,20 +25,20 @@ You have been contracted by Coo Coo Computing Challengers to take a concept, Cli
       - [X ] Have a function that adds the amount of _Clicking Companions_ to the click total.
       - [ X] Inside your game loop, call the above function every second.
 - [ ] You must implement a feature called _'Collective Culmination Compounders'_.
-  - [ ] _Collective Culmination Compounders_ are bought with clicks from your click total.
-  - [ ] Each _Collective Culmination Compounder_ that is purchased increases the cost of the next _Collective Culmination Compounder_.
+  - [ X] _Collective Culmination Compounders_ are bought with clicks from your click total.
+  - [X ] Each _Collective Culmination Compounder_ that is purchased increases the cost of the next _Collective Culmination Compounder_.
   - [X ] The initial cost should be around 10 clicks.
   - [X ] The first _Collective Culmination Compounder_ increases the value of a click from `1x` to `1.2x`.
   - [ X] Every subsequent _Collective Culmination Compounder_ increases the value of a click exponentially.  For example, the second _Collective Culmination Compounder_ will increase the value of a click to `1.2x * 1.2x` or `1.44x`.
-- [ ] You must be able to reset the game state.  This action should reset the game to zero clicks, zero _Clicking Companions_, and zero _Collective Culmination Compounders_.
+- [X ] You must be able to reset the game state.  This action should reset the game to zero clicks, zero _Clicking Companions_, and zero _Collective Culmination Compounders_.
 - [ ] This website also has some other requirements:
   - [ ] Use semantic html and BEM when writing your html so that in the future we have a solid base to expand upon.
-  - [ ] You must have a header for this page.  It should have a few of the following features:
-    - [ ] It should have a hamburger button that expands a navigation menu.
+  - [X ] You must have a header for this page.  It should have a few of the following features:
+    - [ X] It should have a hamburger button that expands a navigation menu.
     - [ ] A navigation menu that when clicked will expand sections about:
-      - [ ] Coo Coo Computing Challengers
-      - [ ] The inspiration for this game, Cookie Clicker.
-      - [ ] Your contact info.
+      - [X ] Coo Coo Computing Challengers
+      - [ X] The inspiration for this game, Cookie Clicker.
+      - [ X] Your contact info.
   - [ ] Deploy your project so that it is reachable on the internet.
 
 ## Iterations
