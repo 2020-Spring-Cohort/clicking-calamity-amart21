@@ -118,13 +118,13 @@ let gen1amount = 0,
         };
     }
 
-    function toggleClass(){
-        let menu = document.querySelector(".mainMenu");
-        menu.classList.toggle("toggleCls");
-    }
-    let hambuger = document.querySelector(".hamIcon");
-    
-    hambuger.addEventListener("click", toggleClass);
+    // function toggleClass(){
+    //     let menu = document.querySelector(".mainMenu");
+    //     menu.classList.toggle("toggleCls");
+    // }
+    // let hambuger = document.querySelector(".hamIcon");
+
+    // hambuger.addEventListener("click", toggleClass);
  
 
     
